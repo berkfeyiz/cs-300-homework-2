@@ -15,14 +15,23 @@
 #include "BST.h"
 
 void compress(){
-	string out_name;			// the name of the file that will be created
+	string out_name;
+	char in;			// the name of the file that will be created
 	out_name = "compout.txt";		
 	ofstream compressed;	// the stream file of the created file
-	compressed.open(out_name);
+	//compressed.open(out_name);
 	ifstream readfile;
 	readfile.open("compin.txt");
 
+	while(!readfile.eof())
+	{
+		readfile.get(in);
+		
+	}
+		  
+
 }
+
 int main() {
    
 	compress();
